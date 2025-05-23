@@ -1,0 +1,32 @@
+name: AsBroadcast
+version: '1.0'
+main: org.infie03.asBroadcast.AsBroadcast
+api-version: '1.18'
+authors: [ Infie03 ]
+description: A broadcast plugin that can send messages to chat, title, subtitle, and actionbar
+commands:
+  as:
+    description: Send a broadcast message to players
+    usage: /as <target> <type> <time> <message>
+    permission: asbroadcast.use
+    aliases: [broadcast, bc]
+  asadmin:
+    description: Send a title and subtitle message at the same time
+    usage: /asadmin <time> <title> || <subtitle>
+    permission: asbroadcast.admin
+    aliases: [bcadmin]
+  asreload:
+    description: Reload the plugin configuration
+    usage: /asreload
+    permission: asbroadcast.reload
+    aliases: [bcreload]
+permissions:
+  asbroadcast.use:
+    description: Allows the use of the broadcast command
+    default: op
+  asbroadcast.admin:
+    description: Allows the use of the admin broadcast command
+    default: op
+  asbroadcast.reload:
+    description: Allows reloading the plugin configuration
+    default: op

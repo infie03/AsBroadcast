@@ -1,0 +1,62 @@
+# AsBroadcast Configuration
+
+# Messages configuration
+messages:
+  # Prefix for plugin messages
+  prefix: "&8[&bAsBroadcast&8] &r"
+  
+  # Error messages
+  errors:
+    no-permission: "&cYou don't have permission to use this command."
+    player-not-found: "&cPlayer not found: %player%"
+    no-players: "&cNo players to send message to."
+    invalid-type: "&cInvalid message type: %type%"
+    usage: "&cUsage: /as <target> <type> <time> <message>"
+  
+  # Success messages
+  success:
+    message-sent: "&aMessage sent successfully!"
+    config-reloaded: "&aConfiguration reloaded successfully!"
+
+# Welcome message for server operators (admins)
+welcome-message:
+  # Enable or disable the welcome message for ops
+  enabled: true
+
+# Command settings
+command:
+  # The command name (default: as)
+  name: "as"
+  
+  # Command aliases
+  aliases:
+    - "broadcast"
+    - "bc"
+
+# Default settings for messages
+defaults:
+  # Default time duration if not specified (in seconds)
+  duration: 5
+  
+  # Default fade-in time for titles/subtitles (in milliseconds)
+  fade-in: 500
+  
+  # Default fade-out time for titles/subtitles (in milliseconds)
+  fade-out: 500
+
+# Tab completion settings
+tab-completion:
+  # Enable or disable tab completion
+  enabled: true
+  
+  # Time suggestions for tab completion
+  time-suggestions:
+    - "5s"
+    - "10s"
+    - "30s"
+    - "1m"
+    - "5m"
+    - "10m"
+
+# Debug mode (prints additional information to console)
+debug: false
