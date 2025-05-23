@@ -1,3 +1,6 @@
+//Made by INFIE_03
+//removed some code.!
+
 package org.infie03.asBroadcast.utils;
 
 import org.bukkit.configuration.file.FileConfiguration;
@@ -115,15 +118,7 @@ public class ConfigManager {
     public int getDefaultFadeIn() {
         return getInt("defaults.fade-in", 500);
     }
-
-    /**
-     * Get the default fade-out time for titles
-     * @return Default fade-out time in milliseconds
-     */
-    public int getDefaultFadeOut() {
-        return getInt("defaults.fade-out", 500);
-    }
-
+   
     /**
      * Check if tab completion is enabled
      * @return true if enabled, false otherwise
@@ -131,17 +126,7 @@ public class ConfigManager {
     public boolean isTabCompletionEnabled() {
         return getBoolean("tab-completion.enabled", true);
     }
-
-    /**
-     * Get the time suggestions for tab completion
-     * @return List of time suggestions
-     */
-    public List<String> getTimeSuggestions() {
-        return getStringList("tab-completion.time-suggestions", Arrays.asList(
-            "5s", "10s", "30s", "1m", "5m", "10m"
-        ));
-    }
-
+    
     /**
      * Check if debug mode is enabled
      * @return true if enabled, false otherwise
@@ -150,19 +135,6 @@ public class ConfigManager {
         return getBoolean("debug", false);
     }
 
-    // Helper methods for getting config values with defaults
-
-    private String getString(String path, String defaultValue) {
-        return config.getString(path, defaultValue);
-    }
-
-    private int getInt(String path, int defaultValue) {
-        return config.getInt(path, defaultValue);
-    }
-
-    private boolean getBoolean(String path, boolean defaultValue) {
-        return config.getBoolean(path, defaultValue);
-    }
 
     private List<String> getStringList(String path, List<String> defaultValue) {
         if (config.contains(path)) {
