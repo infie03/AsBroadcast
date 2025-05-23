@@ -113,4 +113,4 @@ For issues, feature requests, or questions, please open an in [Discord](https://
 ##Note:
 > AsBroadcast is open source for showcase purposes only. The code is available on [GitHub](https://github.com/infie03/AsBroadcast) to demonstrate my development skills and plugin design. While you're welcome to explore the code, full reuse, modification, or redistribution is not permitted without explicit permission.
 
-`If you're interested in collaboration or usage beyond viewing, feel free to reach out via [Discord](https://discord.gg/6NXA8BWGbh).`
+If you're interested in collaboration or usage beyond viewing, feel free to reach out via [Discord](https://discord.gg/6NXA8BWGbh).
